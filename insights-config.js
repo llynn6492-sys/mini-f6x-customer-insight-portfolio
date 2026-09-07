@@ -1,0 +1,37 @@
+window.DASHBOARD_INSIGHTS = Object.freeze([
+  { selector: "#page-profile .snapshot-card", text: "F66 客群整体更年轻，且女性占比略高于 F65。" },
+  { selector: "#gender-chart", text: "F65 与 F66 均以女性用户为主，F66 女性占比相对更高。" },
+  { selector: "#age-chart", text: "F66 在年轻年龄段的用户贡献更突出。" },
+  { selector: "#marital-status-chart", text: "已婚有孩子是两款车型共同的主要家庭状态。" },
+  { selector: "#education-chart", text: "本科及以上学历构成两款车型的核心用户基础。" },
+  { selector: "#household-income-chart", text: "30–50 万元税后家庭收入是主要客群区间。" },
+  { selector: "#industry-chart", text: "IT、互联网与金融服务是 MINI 用户的重要行业来源。" },
+
+  { selector: "#page-home .sample-overview-card", text: "调研覆盖 F65/F66 车主及潜客，为跨模块分析提供统一样本基础。" },
+  { selector: "#page-home .test-drive-card", text: "F66 车主及潜客的试驾触达表现整体高于 F65。" },
+  { selector: "#page-home .brand-image-card", text: "活力满满与个性出众是车主和潜客共同认可的核心品牌标签。" },
+
+  { selector: "#purchase-type-chart", text: "首购仍是主要购车类型，增购与换购体现 MINI 的多元购车场景。" },
+  { selector: "#female-user-chart", text: "实际用车人以女性为主，与 MINI 核心用户画像一致。" },
+  { selector: "#purchase-profile-drilldown .snapshot-card", text: "不同购车类型下，F65/F66 的人口属性结构呈现差异。" },
+  { selector: "#purchase-profile-gender", text: "当前购车类型下，两车型用户仍以女性为主。" },
+  { selector: "#purchase-profile-age", text: "购车类型筛选后可观察两车型年龄结构的变化。" },
+  { selector: "#purchase-profile-marital", text: "家庭生命周期是理解不同购车类型的重要维度。" },
+  { selector: "#purchase-profile-education", text: "高学历人群仍是 MINI 的稳定核心客群。" },
+  { selector: "#purchase-profile-income", text: "家庭收入差异反映首购、增购与换购能力结构。" },
+  { selector: "#purchase-profile-industry", text: "行业构成帮助识别不同购车类型的重点职业来源。" },
+
+  { selector: "#motivation-chart", text: "个性表达与驾驶乐趣是两款车型最核心的购买驱动力。" },
+  { selector: "#reason-chart", text: "外观、操控和动力构成 MINI 最具影响力的产品购买理由。" },
+
+  { selector: "[data-insight-key='journey-competitor-f65']", text: "MINI、BMW 与奔驰构成 F65 最主要的竞品考虑集合。" },
+  { selector: "[data-insight-key='journey-competitor-f66']", text: "F66 用户对 Smart 的交叉考虑明显高于 F65。" },
+  { selector: "[data-insight-key='journey-channel-f65']", text: "MINI 伙伴为 F65 最主要的信息来源，占比 23.0%。" },
+  { selector: "[data-insight-key='journey-channel-f66']", text: "小红书对 F66 用户的影响力最突出，占比 24.0%。" },
+  { selector: "[data-insight-key='journey-origin-f65']", text: "BMW 和 MINI 老车主为 F65 贡献一定品牌体系内转化。" },
+  { selector: "[data-insight-key='journey-origin-f66']", text: "F66 的 BMW 老车主转化比例高于 F65。" },
+  { selector: "[data-insight-key='journey-city-f65']", text: "上海、北京和杭州是 F65 订单贡献最高的三个城市。" },
+  { selector: "[data-insight-key='journey-city-f66']", text: "F66 销售同样集中在核心一线与新一线城市。" },
+  { selector: "[data-insight-key='previous-profile-f65']", text: "BMW 用户为 F65 主要来源，其中 3系、5系和 X3 贡献最高。" },
+  { selector: "[data-insight-key='previous-profile-f66']", text: "F66 用户同样以 BMW 迁移用户为主，MINI 存量用户主要来自 3-door 车型。" },
+]);

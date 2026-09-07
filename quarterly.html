@@ -1,0 +1,1223 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="基于车主及潜客调研数据的用户画像与市场洞察。"
+    />
+    <title>MINI F6X 车主季度洞察报告</title>
+    <link rel="stylesheet" href="style.css?v=20260728-15" />
+  </head>
+  <body data-default-page="profile" data-dashboard-mode="quarterly">
+    <aside class="sidebar" aria-label="季报看板导航">
+      <div class="sidebar__brand">
+        <span class="sidebar__eyebrow">MINI · QUARTERLY</span>
+        <span class="sidebar__title">F6X 车主季度洞察报告</span>
+      </div>
+      <nav class="sidebar__nav" aria-label="季报主要导航">
+        <a class="sidebar__link sidebar__link--active" href="#profile" data-page-target="profile" aria-current="page">01 车主基础画像</a>
+        <a class="sidebar__link" href="#purchase-behavior" data-page-target="purchase-behavior">02 购车行为分析</a>
+        <a class="sidebar__link" href="#motivation-product" data-page-target="motivation-product">03 购车动机分析</a>
+        <a class="sidebar__link" href="#purchase-journey" data-page-target="purchase-journey">04 购买决策路径</a>
+        <div class="sidebar__divider" aria-hidden="true"></div>
+        <a class="sidebar__link sidebar__report-link" href="monthly.html">返回月报</a>
+        <a class="sidebar__link sidebar__report-link" href="index.html">报表入口</a>
+      </nav>
+      <button class="sidebar-resizer" type="button" aria-label="调整侧边栏宽度" aria-orientation="vertical" aria-valuemin="176" aria-valuemax="280" aria-valuenow="208" title="拖动调整宽度 · 双击恢复默认"><span aria-hidden="true"></span></button>
+    </aside>
+
+    <main class="main-content">
+      <section class="quarterly-filter-bar quarterly-filter-bar--summary" aria-label="季度报告说明">
+        <div class="quarterly-filter-bar__intro">
+          <span>QUARTERLY DASHBOARD</span>
+          <strong>季度车型与车系洞察</strong>
+          <small>总体对比 · Cooper C / Cooper S 下钻</small>
+        </div>
+      </section>
+      <section
+        class="dashboard-page dashboard-page--active"
+        id="page-profile"
+        data-page="profile"
+        aria-label="客户基础画像"
+      >
+      <header class="page-header">
+        <div>
+          <p class="page-header__eyebrow">作品集演示 · 模拟数据</p>
+          <h1>01 季度车主基础画像</h1>
+          <p class="page-header__subtitle">
+            F65/F66 车主是谁？不同车系有何差异？
+          </p>
+        </div>
+        <div class="page-header__actions">
+          <div class="page-header__scope" aria-label="数据来源">
+            <span>数据来源</span>
+            <strong id="profile-data-source-label">车主样本</strong>
+          </div>
+        </div>
+      </header>
+
+      <section class="dashboard-section" aria-labelledby="insights-title">
+        <div class="section-heading">
+          <div>
+            <span class="section-heading__number">1.0</span>
+            <h2 id="insights-title">核心洞察</h2>
+          </div>
+          <p>管理层摘要</p>
+        </div>
+
+        <article class="insight-card" data-insight-section="profile">
+          <div class="insight-card__marker" aria-hidden="true">01</div>
+          <div class="insight-card__content">
+            <p class="insight-card__label">客户画像要点</p>
+            <ul class="insight-list"></ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="dashboard-section" aria-labelledby="snapshot-title">
+        <div class="section-heading">
+          <div>
+            <span class="section-heading__number">1.1</span>
+            <h2 id="snapshot-title">客户概览</h2>
+          </div>
+          <p>核心指标对比</p>
+        </div>
+
+        <article class="card snapshot-card">
+          <div class="snapshot-card__intro">
+            <h3>核心客群指标</h3>
+            <p>
+              对比呈现与业务决策最相关的客户特征。
+            </p>
+          </div>
+
+          <div class="snapshot-table-wrap">
+            <table class="snapshot-table">
+              <thead>
+                <tr>
+                  <th scope="col">指标</th>
+                  <th scope="col"><span class="model-tag model-tag--f65">F65</span></th>
+                  <th scope="col"><span class="model-tag model-tag--f66">F66</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">样本量</th>
+                  <td id="profile-snapshot-sample-f65">222</td>
+                  <td id="profile-snapshot-sample-f66">245</td>
+                </tr>
+                <tr>
+                  <th scope="row">平均年龄</th>
+                  <td id="profile-snapshot-age-f65">35.6</td>
+                  <td id="profile-snapshot-age-f66">34.6</td>
+                </tr>
+                <tr>
+                  <th scope="row">女性占比</th>
+                  <td id="profile-snapshot-female-f65">55.9%</td>
+                  <td id="profile-snapshot-female-f66">58.0%</td>
+                </tr>
+                <tr>
+                  <th scope="row">主要婚姻状态</th>
+                  <td id="profile-snapshot-family-f65">已婚有孩子</td>
+                  <td id="profile-snapshot-family-f66">已婚有孩子</td>
+                </tr>
+                <tr>
+                  <th scope="row">主要行业</th>
+                  <td id="profile-snapshot-industry-f65">IT / 互联网</td>
+                  <td id="profile-snapshot-industry-f66">IT / 互联网</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+
+      <section class="dashboard-section" aria-labelledby="breakdown-title">
+        <div class="section-heading">
+          <div>
+            <span class="section-heading__number">1.2</span>
+            <h2 id="breakdown-title">基础画像分布</h2>
+          </div>
+          <p>人数与占比对比</p>
+        </div>
+
+        <div class="chart-grid profile-chart-grid">
+          <article class="card chart-card chart-card--gender profile-chart-card profile-chart-card--gender">
+            <header class="chart-card__header">
+              <div>
+                <h3>性别分布</h3>
+              </div>
+            </header>
+            <div
+              class="chart-canvas gender-chart-pair"
+              id="gender-chart"
+              data-chart="gender"
+              data-comparison="F65,F66"
+              data-tooltip-fields="count,percentage,averageAge"
+              role="img"
+              aria-label="F65与F66性别分布图"
+            >
+              <span class="chart-status">正在加载性别数据…</span>
+            </div>
+          </article>
+
+          <article class="card chart-card chart-card--wide profile-chart-card profile-chart-card--age">
+            <header class="chart-card__header">
+              <div>
+                <h3>年龄分布</h3>
+              </div>
+              <div class="chart-legend" aria-label="车型图例">
+                <span><i class="legend-dot legend-dot--f65"></i>F65</span>
+                <span><i class="legend-dot legend-dot--f66"></i>F66</span>
+              </div>
+            </header>
+            <div
+              class="chart-canvas chart-canvas--wide"
+              id="age-chart"
+              data-chart="age"
+              data-comparison="F65,F66"
+              data-tooltip-fields="count,percentage"
+              role="img"
+              aria-label="F65与F66年龄分布图"
+            >
+              <span>年龄分布图表区域</span>
+            </div>
+          </article>
+
+          <article class="card chart-card profile-chart-card profile-chart-card--marital">
+            <header class="chart-card__header">
+              <div>
+                <h3>婚姻状态</h3>
+              </div>
+              <div class="chart-legend" aria-label="车型图例">
+                <span><i class="legend-dot legend-dot--f65"></i>F65</span>
+                <span><i class="legend-dot legend-dot--f66"></i>F66</span>
+              </div>
+            </header>
+            <div
+              class="chart-canvas"
+              id="marital-status-chart"
+              data-chart="marital-status"
+              data-comparison="F65,F66"
+              data-tooltip-fields="count,percentage"
+              role="img"
+              aria-label="F65与F66婚姻状态分布图"
+            >
+              <span>婚姻状态图表区域</span>
+            </div>
+          </article>
+
+          <article class="card chart-card profile-chart-card profile-chart-card--education">
+            <header class="chart-card__header">
+              <div>
+                <h3>学历分布</h3>
+              </div>
+              <div class="chart-legend" aria-label="车型图例">
+                <span><i class="legend-dot legend-dot--f65"></i>F65</span>
+                <span><i class="legend-dot legend-dot--f66"></i>F66</span>
+              </div>
+            </header>
+            <div
+              class="chart-canvas"
+              id="education-chart"
+              data-chart="education"
+              data-comparison="F65,F66"
+              data-tooltip-fields="count,percentage"
+              role="img"
+              aria-label="F65与F66学历分布图"
+            >
+              <span>学历分布图表区域</span>
+            </div>
+          </article>
+
+          <article class="card chart-card profile-chart-card profile-chart-card--income">
+            <header class="chart-card__header">
+              <div>
+                <h3>税后家庭收入分布</h3>
+              </div>
+              <div class="chart-legend" aria-label="车型图例">
+                <span><i class="legend-dot legend-dot--f65"></i>F65</span>
+                <span><i class="legend-dot legend-dot--f66"></i>F66</span>
+              </div>
+            </header>
+            <div
+              class="chart-canvas"
+              id="household-income-chart"
+              data-chart="household-income"
+              data-comparison="F65,F66"
+              data-tooltip-fields="count,percentage"
+              role="img"
+              aria-label="F65与F66税后家庭收入分布图"
+            >
+              <span>税后家庭收入图表区域</span>
+            </div>
+          </article>
+
+          <article class="card chart-card chart-card--wide profile-chart-card profile-chart-card--industry">
+            <header class="chart-card__header">
+              <div class="chart-title-with-question">
+                <h3>行业信息</h3>
+                <small
+                  class="chart-question-inline"
+                  title="Q: 请问，您现在的具体行业是？（单选）"
+                >Q: 请问，您现在的具体行业是？（单选）</small>
+              </div>
+              <div class="chart-legend" aria-label="车型图例">
+                <span><i class="legend-dot legend-dot--f65"></i>F65</span>
+                <span><i class="legend-dot legend-dot--f66"></i>F66</span>
+              </div>
+            </header>
+            <div
+              id="industry-chart"
+              class="chart-canvas chart-canvas--wide industry-chart-pair"
+              data-chart="industry"
+              data-comparison="F65,F66"
+              data-tooltip-fields="count,percentage"
+              role="img"
+              aria-label="F65与F66行业信息分布图"
+            >
+              <span>行业信息图表区域</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="dashboard-section quarterly-drilldown-section" aria-labelledby="profile-series-title">
+        <div class="section-heading section-heading--with-filter">
+          <div>
+            <span class="section-heading__number">1.3</span>
+            <h2 id="profile-series-title">车系基础画像下钻</h2>
+          </div>
+          <div class="quarterly-profile-filters" role="group" aria-label="车系基础画像筛选">
+            <label for="quarterly-profile-model-filter">
+              <span>车型</span>
+              <select id="quarterly-profile-model-filter">
+                <option value="F65">F65</option>
+                <option value="F66">F66</option>
+              </select>
+            </label>
+            <label for="quarterly-profile-series-filter">
+              <span>车系</span>
+              <select id="quarterly-profile-series-filter">
+                <option value="Cooper C">Cooper C</option>
+                <option value="Cooper S">Cooper S</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <p class="quarterly-drilldown-note">选择车型与车系，查看相同口径的完整车主画像指标。</p>
+        <div class="quarterly-profile-series-stack" id="quarterly-profile-series">
+          <span class="chart-status">正在加载车系画像数据…</span>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <span>MINI F6X 车主&amp;潜客调研报告</span>
+        <span>用户画像 · 第一部分</span>
+      </footer>
+      </section>
+
+      <section class="dashboard-page" id="page-home" data-page="home" hidden>
+        <header class="page-header home-page-header">
+          <div>
+            <p class="page-header__eyebrow">作品集演示 · 模拟数据</p>
+            <h1>MINI F6X 车主&amp;潜客调研报告</h1>
+            <p class="page-header__subtitle">F65 / F66 车主及潜客调研管理层摘要</p>
+          </div>
+          <div class="page-header__scope home-period" aria-label="数据周期">
+            <span>数据周期</span>
+            <strong>20260101 - 20260630</strong>
+          </div>
+        </header>
+
+        <section class="dashboard-section" aria-labelledby="home-insight-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">01</span>
+              <h2 id="home-insight-title">核心洞察</h2>
+            </div>
+            <p>管理层摘要</p>
+          </div>
+          <article class="insight-card home-insight">
+            <div class="insight-card__marker" aria-hidden="true">01</div>
+            <div class="insight-card__content">
+              <p class="insight-card__label">整体调研要点</p>
+              <ul class="insight-list">
+                <li><strong>F65/F66 覆盖车主及潜客样本，</strong>为用户画像、购买行为及品牌认知分析提供基础。</li>
+                <li><strong>F66 车主及潜客试驾率整体高于 F65，</strong>用户体验触达表现更强。</li>
+                <li><strong>F65/F66 用户均认可 MINI 的活力与独特性，</strong>“活力满满”和“个性出众”为核心品牌标签。</li>
+              </ul>
+            </div>
+          </article>
+        </section>
+
+        <section class="dashboard-section" aria-labelledby="sample-overview-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">02</span>
+              <h2 id="sample-overview-title">样本概览</h2>
+            </div>
+            <p>车主及潜客研究覆盖</p>
+          </div>
+          <div class="card sample-overview-card">
+            <div class="sample-table-wrap">
+              <table class="sample-overview-table">
+                <thead>
+                  <tr>
+                    <th scope="col">人群分组</th>
+                    <th scope="col">样本量</th>
+                    <th scope="col">用户画像</th>
+                    <th scope="col">产品/价格感知</th>
+                    <th scope="col">关注/下订原因</th>
+                    <th scope="col">考虑竞品</th>
+                    <th scope="col">渠道分布</th>
+                  </tr>
+                </thead>
+                <tbody id="sample-overview-body">
+                  <tr><td colspan="7">正在加载样本数据…</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section class="dashboard-section" aria-labelledby="test-drive-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">03</span>
+              <h2 id="test-drive-title">试驾情况</h2>
+              <small class="home-question-inline" title="Q: 您是否参与试驾呢？">Q: 您是否参与试驾呢？</small>
+            </div>
+            <p>体验触达表现</p>
+          </div>
+          <div class="home-inline-insight">
+            F66 车主及潜客试驾率均高于 F65，体现 F66 用户体验触达效果较强。
+          </div>
+          <article class="card test-drive-card">
+            <div class="test-drive-grid" id="test-drive-chart-grid">
+              <span class="chart-status">正在加载试驾数据…</span>
+            </div>
+          </article>
+        </section>
+
+        <section class="dashboard-section" aria-labelledby="brand-image-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">04</span>
+              <h2 id="brand-image-title">品牌形象</h2>
+              <small
+                class="home-question-inline"
+                title="Q: 您提到喜欢 MINI 品牌是您选择 MINI 的主要原因，想具体了解下 MINI 品牌给您的感受（打分题，1–5 分）"
+              >
+                Q: 您提到喜欢 MINI 品牌是您选择 MINI 的主要原因，想具体了解下 MINI 品牌给您的感受（打分题，1–5 分）
+              </small>
+            </div>
+            <p>核心品牌标签评分</p>
+          </div>
+          <div class="home-inline-insight">
+            F65/F66 用户均高度认可 MINI 品牌的活力与独特性，其中“活力满满”和“个性出众”为核心品牌标签。
+          </div>
+          <article class="card brand-image-card">
+            <div class="brand-image-grid" id="brand-image-score-list">
+              <span class="chart-status">正在加载品牌形象数据…</span>
+            </div>
+          </article>
+        </section>
+
+        <footer class="page-footer">
+          <span>MINI F6X 车主&amp;潜客调研报告</span>
+          <span>首页 · 管理层执行摘要</span>
+        </footer>
+      </section>
+
+      <section class="dashboard-page" id="page-purchase-behavior" data-page="purchase-behavior" hidden>
+        <header class="page-header">
+          <div>
+            <p class="page-header__eyebrow">作品集演示 · 模拟数据</p>
+            <h1>02 购车行为分析</h1>
+            <p class="page-header__subtitle">用户怎么买车，以及谁在使用？</p>
+          </div>
+          <div class="page-header__scope" aria-label="数据来源">
+            <span>数据来源</span>
+            <strong>车主样本</strong>
+          </div>
+        </header>
+
+        <section class="dashboard-section dashboard-section--intro" aria-labelledby="purchase-insight-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">2.0</span>
+              <h2 id="purchase-insight-title">核心洞察</h2>
+            </div>
+            <p>购车行为摘要</p>
+          </div>
+          <article class="insight-card" data-insight-section="purchase-behavior">
+            <div class="insight-card__marker" aria-hidden="true">02</div>
+            <div class="insight-card__content">
+              <p class="insight-card__label">购车行为要点</p>
+              <ul class="insight-list"></ul>
+            </div>
+          </article>
+        </section>
+
+        <section class="dashboard-section" aria-labelledby="purchase-overview-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">02</span>
+              <h2 id="purchase-overview-title">购车行为核心指标</h2>
+            </div>
+            <p>F65 与 F66 对比</p>
+          </div>
+          <div class="purchase-chart-grid purchase-chart-grid--overview">
+            <article class="card purchase-chart-card purchase-chart-card--type">
+              <header class="chart-card__header chart-card__header--numbered">
+                <span class="card-part-number">2.1</span>
+                <h3>购车类型分布</h3>
+                <small
+                  class="chart-question-inline"
+                  title="Q: 您是本人首购、增购还是置换？您购买这辆车，主要是由谁来使用的？"
+                >Q: 您是本人首购、增购还是置换？您购买这辆车，主要是由谁来使用的？</small>
+              </header>
+              <div class="purchase-chart-canvas" id="purchase-type-chart">
+                <span class="chart-status">正在加载购车类型数据…</span>
+              </div>
+            </article>
+            <article class="card purchase-chart-card purchase-chart-card--user">
+              <header class="chart-card__header chart-card__header--numbered">
+                <span class="card-part-number">2.2</span>
+                <h3>实际用车人比例</h3>
+              </header>
+              <div class="purchase-chart-canvas" id="female-user-chart">
+                <span class="chart-status">正在加载实际用车人数据…</span>
+              </div>
+            </article>
+          </div>
+          <div class="quarterly-inline-drilldown">
+            <div class="quarterly-inline-drilldown__heading">
+              <div>
+                <strong>车系下钻对比</strong>
+                <span>选择车型与车系查看购车行为</span>
+              </div>
+              <div class="quarterly-profile-filters quarterly-purchase-filters" role="group" aria-label="购车行为车系筛选">
+                <label for="quarterly-purchase-model-filter">
+                  <span>车型</span>
+                  <select id="quarterly-purchase-model-filter">
+                    <option value="F65">F65</option>
+                    <option value="F66">F66</option>
+                  </select>
+                </label>
+                <label for="quarterly-purchase-series-filter">
+                  <span>车系</span>
+                  <select id="quarterly-purchase-series-filter">
+                    <option value="Cooper C">Cooper C</option>
+                    <option value="Cooper S">Cooper S</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div class="quarterly-series-chart-grid" id="quarterly-purchase-series">
+              <span class="chart-status">正在加载车系购车行为数据…</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="dashboard-section" aria-labelledby="purchase-profile-title">
+          <div class="section-heading section-heading--with-filter">
+            <div>
+              <span class="section-heading__number">2.3</span>
+              <h2 id="purchase-profile-title">购车类型用户画像下钻</h2>
+            </div>
+            <div class="purchase-profile-filters">
+              <label class="purchase-type-filter" for="purchase-type-filter">
+                <span>购车类型</span>
+                <select id="purchase-type-filter">
+                  <option value="首购">首购</option>
+                  <option value="增购">增购</option>
+                  <option value="换购">换购</option>
+                </select>
+              </label>
+              <label class="purchase-type-filter" for="purchase-model-filter">
+                <span>车型</span>
+                <select id="purchase-model-filter">
+                  <option value="F65">F65</option>
+                  <option value="F66">F66</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="purchase-drilldown-profile" id="purchase-profile-drilldown">
+            <div class="section-heading purchase-profile-heading">
+              <div>
+                <span class="section-heading__number">PROFILE</span>
+                <h2 id="purchase-profile-selected-title">首购用户画像</h2>
+              </div>
+              <p id="purchase-profile-selected-model">F65</p>
+            </div>
+
+            <div class="purchase-profile-core-grid">
+              <article class="card purchase-profile-age-kpi">
+                <header class="purchase-profile-card-header">
+                  <h3>平均年龄</h3>
+                  <span class="purchase-profile-sample" id="purchase-profile-average-age-n">N=N/A</span>
+                </header>
+                <div class="purchase-profile-age-kpi__value">
+                  <span>平均年龄</span>
+                  <strong id="purchase-profile-average-age">N/A</strong>
+                </div>
+              </article>
+
+              <article class="card chart-card purchase-profile-drilldown-card">
+                <header class="purchase-profile-card-header">
+                  <h3>性别分布</h3>
+                  <span class="purchase-profile-sample" id="purchase-profile-gender-n">N=N/A</span>
+                </header>
+                <div class="chart-canvas purchase-profile-drilldown-canvas" id="purchase-profile-gender">
+                  <span class="chart-status">正在加载性别数据…</span>
+                </div>
+              </article>
+            </div>
+
+            <div class="purchase-profile-secondary-grid">
+              <article class="card chart-card chart-card--wide purchase-profile-drilldown-card purchase-profile-drilldown-card--wide">
+                <header class="purchase-profile-card-header">
+                  <h3>年龄段分布</h3>
+                  <span class="purchase-profile-sample" id="purchase-profile-age-n">N=N/A</span>
+                </header>
+                <div class="chart-canvas chart-canvas--wide purchase-profile-drilldown-canvas" id="purchase-profile-age">
+                  <span class="chart-status">正在加载年龄数据…</span>
+                </div>
+              </article>
+
+              <article class="card chart-card chart-card--wide purchase-profile-drilldown-card purchase-profile-drilldown-card--detail">
+                <header class="purchase-profile-card-header">
+                  <h3 id="purchase-profile-detail-title">家庭年收入分布</h3>
+                  <span class="purchase-profile-sample" id="purchase-profile-detail-n">N=N/A</span>
+                </header>
+                <div class="purchase-profile-detail-content" id="purchase-profile-detail-content">
+                  <span class="chart-status">正在加载明细数据…</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <footer class="page-footer">
+          <span>MINI F6X 车主&amp;潜客调研报告</span>
+          <span>购车行为分析 · 第二部分</span>
+        </footer>
+      </section>
+
+      <section class="dashboard-page" id="page-motivation-product" data-page="motivation-product" hidden>
+        <header class="page-header">
+          <div>
+            <p class="page-header__eyebrow">作品集演示 · 模拟数据</p>
+            <h1>03 购车动机分析</h1>
+            <p class="page-header__subtitle">为什么用户选择 MINI？</p>
+          </div>
+          <div class="page-header__scope" aria-label="数据来源">
+            <span>数据来源</span>
+            <strong>车主样本</strong>
+          </div>
+        </header>
+
+        <section class="dashboard-section dashboard-section--intro" aria-labelledby="motivation-insight-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">3.0</span>
+              <h2 id="motivation-insight-title">核心洞察</h2>
+            </div>
+            <p>购买驱动力摘要</p>
+          </div>
+          <article class="insight-card" data-insight-section="motivation-product">
+            <div class="insight-card__marker" aria-hidden="true">03</div>
+            <div class="insight-card__content">
+              <p class="insight-card__label">购车动机要点</p>
+              <ul class="insight-list"></ul>
+            </div>
+          </article>
+        </section>
+
+        <section class="dashboard-section" aria-labelledby="motivation-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">3.1</span>
+              <h2 id="motivation-title">购车动机</h2>
+              <small
+                class="chart-question-inline"
+                title="Q: 请问您本次购车的具体原因是？（多选，最多3个）"
+              >Q: 请问您本次购车的具体原因是？（多选，最多3个）</small>
+            </div>
+            <p>F65 与 F66 对比</p>
+          </div>
+          <article class="card section3-chart-card">
+            <div class="section3-comparison-chart" id="motivation-chart">
+              <span class="chart-status">正在加载购车动机数据…</span>
+            </div>
+          </article>
+          <div class="quarterly-inline-drilldown">
+            <div class="quarterly-inline-drilldown__heading">
+              <div>
+                <strong>车系下钻对比</strong>
+                <span>选择车型与车系查看购车动机</span>
+              </div>
+              <div class="quarterly-profile-filters quarterly-motivation-filters" role="group" aria-label="购车动机车系筛选">
+                <label for="quarterly-motivation-model-filter">
+                  <span>车型</span>
+                  <select id="quarterly-motivation-model-filter">
+                    <option value="F65">F65</option>
+                    <option value="F66">F66</option>
+                  </select>
+                </label>
+                <label for="quarterly-motivation-series-filter">
+                  <span>车系</span>
+                  <select id="quarterly-motivation-series-filter">
+                    <option value="Cooper C">Cooper C</option>
+                    <option value="Cooper S">Cooper S</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div class="quarterly-series-chart-grid" id="quarterly-motivation-series">
+              <span class="chart-status">正在加载车系购车动机数据…</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="dashboard-section" aria-labelledby="reason-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">3.2</span>
+              <h2 id="reason-title">购车原因</h2>
+              <small
+                class="chart-question-inline"
+                title="Q: 您为什么最终选择购买这辆全新 MINI，而不是其他车型呢？（多选）"
+              >Q: 您为什么最终选择购买这辆全新 MINI，而不是其他车型呢？（多选）</small>
+            </div>
+            <p>产品与服务驱动因素</p>
+          </div>
+          <article class="card section3-chart-card">
+            <div class="section3-comparison-chart" id="reason-chart">
+              <span class="chart-status">正在加载购车原因数据…</span>
+            </div>
+          </article>
+          <div class="quarterly-inline-drilldown">
+            <div class="quarterly-inline-drilldown__heading">
+              <div>
+                <strong>车系下钻对比</strong>
+                <span>选择车型与车系查看购车原因</span>
+              </div>
+              <div class="quarterly-profile-filters quarterly-reason-filters" role="group" aria-label="购车原因车系筛选">
+                <label for="quarterly-reason-model-filter">
+                  <span>车型</span>
+                  <select id="quarterly-reason-model-filter">
+                    <option value="F65">F65</option>
+                    <option value="F66">F66</option>
+                  </select>
+                </label>
+                <label for="quarterly-reason-series-filter">
+                  <span>车系</span>
+                  <select id="quarterly-reason-series-filter">
+                    <option value="Cooper C">Cooper C</option>
+                    <option value="Cooper S">Cooper S</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div class="quarterly-series-chart-grid" id="quarterly-reason-series">
+              <span class="chart-status">正在加载车系购车原因数据…</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="dashboard-section" aria-labelledby="quotes-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">3.3</span>
+              <h2 id="quotes-title">客户原话摘录</h2>
+            </div>
+            <p>模拟原话，仅用于界面测试</p>
+          </div>
+          <article class="card quote-section">
+            <div class="quote-toolbar">
+              <div class="quote-tabs" id="quote-reason-tabs" role="tablist" aria-label="购车原因筛选"></div>
+              <div class="quote-legend" aria-label="高亮说明">
+                <span><i class="quote-legend__swatch quote-legend__swatch--vehicle"></i>车辆 / 服务相关</span>
+                <span><i class="quote-legend__swatch quote-legend__swatch--experience"></i>实际体验相关</span>
+              </div>
+            </div>
+            <div class="quote-columns">
+              <section class="quote-column" aria-labelledby="quote-f65-title">
+                <h3 id="quote-f65-title"><span class="model-dot model-dot--f65"></span>F65 原话摘录</h3>
+                <div class="quote-list" id="quote-list-f65"></div>
+              </section>
+              <section class="quote-column" aria-labelledby="quote-f66-title">
+                <h3 id="quote-f66-title"><span class="model-dot model-dot--f66"></span>F66 原话摘录</h3>
+                <div class="quote-list" id="quote-list-f66"></div>
+              </section>
+            </div>
+          </article>
+        </section>
+
+        <footer class="page-footer">
+          <span>MINI F6X 车主&amp;潜客调研报告</span>
+          <span>购买动机与产品认知 · 第三部分</span>
+        </footer>
+      </section>
+
+      <section class="dashboard-page" id="page-purchase-journey" data-page="purchase-journey" hidden>
+        <header class="page-header">
+          <div>
+            <p class="page-header__eyebrow">Purchase Decision Journey</p>
+            <h1>04 购买决策路径</h1>
+            <p class="page-header__subtitle">用户如何了解、比较并最终购买 MINI？</p>
+          </div>
+          <div class="page-header__scope" aria-label="数据来源">
+            <span>数据来源</span>
+            <strong>车主样本</strong>
+          </div>
+        </header>
+
+        <section class="dashboard-section" aria-labelledby="journey-insight-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">4.0</span>
+              <h2 id="journey-insight-title">核心洞察</h2>
+            </div>
+            <p>购买决策路径摘要</p>
+          </div>
+          <article class="insight-card journey-insight-card" data-insight-section="purchase-journey">
+            <div class="insight-card__marker" aria-hidden="true">04</div>
+            <div class="insight-card__content">
+              <p class="insight-card__label">车主购买决策要点</p>
+              <ul class="insight-list"></ul>
+            </div>
+          </article>
+        </section>
+
+        <section class="dashboard-section" aria-labelledby="competitor-consideration-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">4.1</span>
+              <h2 id="competitor-consideration-title">竞品考虑分析</h2>
+              <small
+                class="chart-question-inline"
+                title="Q: 您在购买这辆全新 MINI 时，还考虑过其他哪些车型呢？（填空，多个答案）"
+              >Q: 您在购买这辆全新 MINI 时，还考虑过其他哪些车型呢？（填空，多个答案）</small>
+            </div>
+            <p>购买阶段品牌交叉考虑</p>
+          </div>
+          <div class="journey-two-column" id="journey-competitor-charts">
+            <span class="chart-status">正在加载竞品考虑数据…</span>
+          </div>
+        </section>
+
+        <section class="dashboard-section" aria-labelledby="information-channel-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">4.2</span>
+              <h2 id="information-channel-title">信息获取渠道</h2>
+              <small
+                class="chart-question-inline"
+                title="Q: 想了解一下您最初是在哪里了解到这辆车相关的信息呢？（多选）"
+              >Q: 想了解一下您最初是在哪里了解到这辆车相关的信息呢？（多选）</small>
+            </div>
+            <p>关键媒体与人际触点</p>
+          </div>
+          <div class="journey-two-column" id="journey-channel-charts">
+            <span class="chart-status">正在加载信息渠道数据…</span>
+          </div>
+          <div class="quarterly-inline-drilldown">
+            <div class="quarterly-inline-drilldown__heading">
+              <strong>车系下钻对比</strong>
+              <span>F65 / F66 · Cooper C / Cooper S</span>
+            </div>
+            <div class="quarterly-series-chart-grid" id="quarterly-channel-series">
+              <span class="chart-status">正在加载车系信息渠道数据…</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="dashboard-section" aria-labelledby="owner-origin-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">4.3</span>
+              <h2 id="owner-origin-title">车主来源分析</h2>
+            </div>
+            <p>品牌体系内外销售构成</p>
+          </div>
+          <div class="journey-two-column" id="journey-origin-charts">
+            <span class="chart-status">正在加载车主来源数据…</span>
+          </div>
+        </section>
+
+        <section class="dashboard-section" aria-labelledby="city-ranking-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">4.4</span>
+              <h2 id="city-ranking-title">销售城市分布</h2>
+            </div>
+            <p>Top 10 城市订单贡献</p>
+          </div>
+          <div class="journey-two-column" id="journey-city-rankings">
+            <span class="chart-status">正在加载城市分布数据…</span>
+          </div>
+        </section>
+
+        <section class="dashboard-section" aria-labelledby="previous-vehicle-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">4.5</span>
+              <h2 id="previous-vehicle-title">前车车系分析</h2>
+            </div>
+            <p>前车车型画像</p>
+          </div>
+          <p class="journey-data-note">数据来源：车主调研样本</p>
+          <div class="journey-two-column" id="journey-previous-vehicles">
+            <span class="chart-status">正在加载前车车系数据…</span>
+          </div>
+        </section>
+
+        <footer class="page-footer">
+          <span>MINI F6X 车主&amp;潜客调研报告</span>
+          <span>购买决策路径分析 · 第四部分</span>
+        </footer>
+      </section>
+
+      <section class="dashboard-page" id="page-leads-intent" data-page="leads-intent" hidden>
+        <header class="page-header">
+          <div>
+            <p class="page-header__eyebrow">作品集演示 · 模拟数据</p>
+            <h1>05 潜客购车意向分析</h1>
+            <p class="page-header__subtitle">
+              F65 &amp; F66 潜客购车行为、车辆背景及购买驱动因素分析
+            </p>
+          </div>
+          <div class="page-header__scope" aria-label="数据来源">
+            <span>数据来源</span>
+            <strong>潜客样本</strong>
+          </div>
+        </header>
+
+        <section class="dashboard-section" aria-labelledby="leads-insight-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">5.0</span>
+              <h2 id="leads-insight-title">核心洞察</h2>
+            </div>
+            <p>潜客购车意向摘要</p>
+          </div>
+          <article class="insight-card" data-insight-section="leads-intent">
+            <div class="insight-card__marker" aria-hidden="true">05</div>
+            <div class="insight-card__content">
+              <p class="insight-card__label">潜客购车意向要点</p>
+              <ul class="insight-list"></ul>
+            </div>
+          </article>
+        </section>
+
+        <section class="dashboard-section" aria-labelledby="leads-purchase-type-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">5.1</span>
+              <h2 id="leads-purchase-type-title">购车类型分布</h2>
+              <small
+                class="chart-question-inline"
+                title="Q: 请问，您是本人首购、增购还是置换？（单选）"
+              >Q: 请问，您是本人首购、增购还是置换？（单选）</small>
+            </div>
+            <p>首购 / 增购 / 换购构成</p>
+          </div>
+          <div class="leads-two-column" id="leads-purchase-type-charts">
+            <span class="chart-status">正在加载潜客购车类型数据…</span>
+          </div>
+        </section>
+
+        <section class="dashboard-section" aria-labelledby="leads-current-vehicle-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">5.2</span>
+              <h2 id="leads-current-vehicle-title">当前家庭主要使用车型</h2>
+              <small
+                class="chart-question-inline"
+                title="Q:（针对增购）您目前家中在用的车型是什么呢？"
+              >Q:（针对增购）您目前家中在用的车型是什么呢？</small>
+            </div>
+            <p>Top 9 家庭用车品牌</p>
+          </div>
+          <div class="leads-two-column" id="leads-current-vehicle-tables">
+            <span class="chart-status">正在加载当前家庭用车数据…</span>
+          </div>
+          <div class="leads-module-insight">
+            BMW 为潜客家庭主要使用品牌，存在 BMW 用户向 MINI 转化机会。
+          </div>
+        </section>
+
+        <section class="dashboard-section" aria-labelledby="leads-previous-vehicle-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">5.3</span>
+              <h2 id="leads-previous-vehicle-title">换购车型分布</h2>
+              <small
+                class="chart-question-inline"
+                title="Q:（针对置换）您换掉不用的车型是什么呢？"
+              >Q:（针对置换）您换掉不用的车型是什么呢？</small>
+            </div>
+            <p>计划替换车辆 Top 9</p>
+          </div>
+          <div class="leads-two-column" id="leads-previous-vehicle-tables">
+            <span class="chart-status">正在加载换购车型数据…</span>
+          </div>
+          <div class="leads-module-insight">
+            德系及主流合资车型为潜客主要替换来源。
+          </div>
+        </section>
+
+        <section class="dashboard-section" aria-labelledby="leads-channel-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">5.4</span>
+              <h2 id="leads-channel-title">购车信息来源</h2>
+              <small
+                class="chart-question-inline"
+                title="Q: 您最初是在哪里了解到这款车的信息呢？（多选）"
+              >Q: 您最初是在哪里了解到这款车的信息呢？（多选）</small>
+            </div>
+            <p>关键媒体与人际触点</p>
+          </div>
+          <div class="leads-two-column" id="leads-channel-charts">
+            <span class="chart-status">正在加载购车信息渠道数据…</span>
+          </div>
+          <div class="leads-module-insight">
+            MINI 伙伴及社交媒体平台是潜客了解车型的主要渠道。
+          </div>
+        </section>
+
+        <section class="dashboard-section" aria-labelledby="leads-driver-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">5.5</span>
+              <h2 id="leads-driver-title">购车动机与关注因素</h2>
+              <small
+                class="chart-question-inline"
+                title="Q: 您本次考虑购车的具体原因是？｜您关注 MINI 这款车的原因？（多选，最多3个）"
+              >Q: 您本次考虑购车的具体原因是？｜您关注 MINI 这款车的原因？（多选，最多3个）</small>
+            </div>
+            <p>购买驱动与产品关注</p>
+          </div>
+          <div class="leads-driver-stack">
+            <article class="card leads-driver-card">
+              <header class="leads-subsection-header">
+                <span>Part A</span>
+                <h3>购车动机</h3>
+              </header>
+              <div class="leads-model-comparison" id="leads-motivation-charts">
+                <span class="chart-status">正在加载购车动机数据…</span>
+              </div>
+            </article>
+            <article class="card leads-driver-card">
+              <header class="leads-subsection-header">
+                <span>Part B</span>
+                <h3>关注 MINI 原因</h3>
+              </header>
+              <div class="leads-model-comparison" id="leads-consideration-charts">
+                <span class="chart-status">正在加载关注原因数据…</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <footer class="page-footer">
+          <span>MINI F6X 车主&amp;潜客调研报告</span>
+          <span>潜客购车意向分析 · 第五部分</span>
+        </footer>
+      </section>
+
+      <section class="dashboard-page" id="page-leads-loss" data-page="leads-loss" hidden>
+        <header class="page-header">
+          <div>
+            <p class="page-header__eyebrow">MINI 中国季度管理看板</p>
+            <h1>06 潜客流失原因分析</h1>
+            <p class="page-header__subtitle">
+              F65 &amp; F66 潜客未购车原因、战败车型及流失因素分析
+            </p>
+          </div>
+          <div class="page-header__scope" aria-label="数据来源">
+            <span>数据来源</span>
+            <strong>潜客样本</strong>
+          </div>
+        </header>
+
+        <section class="dashboard-section" aria-labelledby="loss-insight-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">6.0</span>
+              <h2 id="loss-insight-title">核心洞察</h2>
+            </div>
+            <p>潜客流失管理摘要</p>
+          </div>
+          <article class="insight-card" data-insight-section="leads-loss">
+            <div class="insight-card__marker" aria-hidden="true">06</div>
+            <div class="insight-card__content">
+              <p class="insight-card__label">潜客流失要点</p>
+              <ul class="insight-list"></ul>
+            </div>
+          </article>
+        </section>
+
+        <section class="dashboard-section" aria-labelledby="lost-reason-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">6.1</span>
+              <h2 id="lost-reason-title">未购车原因</h2>
+            </div>
+            <p>未选择 MINI 的主要原因</p>
+          </div>
+          <div class="loss-two-column" id="lost-reason-charts">
+            <span class="chart-status">正在加载未购车原因数据…</span>
+          </div>
+          <div class="loss-module-insight">
+            产品因素和价格因素是潜客未选择 MINI 的主要原因。
+          </div>
+        </section>
+
+        <section class="dashboard-section" aria-labelledby="lost-vehicle-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">6.2</span>
+              <h2 id="lost-vehicle-title">最终选择车型分析</h2>
+            </div>
+            <p>Top 10 战败品牌车型</p>
+          </div>
+          <div class="loss-two-column" id="lost-vehicle-tables">
+            <span class="chart-status">正在加载战败车型数据…</span>
+          </div>
+          <div class="loss-module-insight">
+            宝马和特斯拉是主要流失竞品，分别代表传统豪华品牌和新能源竞争压力。
+          </div>
+        </section>
+
+        <section class="dashboard-section" aria-labelledby="lost-factor-title">
+          <div class="section-heading loss-price-heading">
+            <div>
+              <h2 id="lost-price-title">价格不合适原因分布</h2>
+            </div>
+            <p>价格敏感潜客进一步追问</p>
+          </div>
+          <div class="loss-two-column" id="lost-price-reason-charts">
+            <span class="chart-status">正在加载价格原因数据…</span>
+          </div>
+
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">6.3</span>
+              <h2 id="lost-factor-title">战败原因分析</h2>
+              <small
+                class="chart-question-inline"
+                title="Q: 请问，您最近购买了哪个品牌的车辆/车型？您购买现在这款车型的具体原因是什么？（多选）"
+              >Q: 请问，您最近购买了哪个品牌的车辆/车型？您购买现在这款车型的具体原因是什么？（多选）</small>
+            </div>
+            <p>选择其他车型的关键因素</p>
+          </div>
+          <div class="loss-two-column" id="lost-factor-charts">
+            <span class="chart-status">正在加载战败原因数据…</span>
+          </div>
+          <div class="loss-module-insight">
+            空间、配置和驾驶体验是潜客选择其他车型的重要因素。
+          </div>
+        </section>
+
+        <section class="dashboard-section" aria-labelledby="loss-voice-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-heading__number">6.4</span>
+              <h2 id="loss-voice-title">客户原话摘录</h2>
+            </div>
+            <p>模拟原话，支持后续人工维护</p>
+          </div>
+          <article class="card loss-voice-card">
+            <div class="loss-voice-legend" aria-label="高亮类型说明">
+              <span><i class="loss-swatch loss-swatch--vehicle"></i>车辆 / 产品相关</span>
+              <span><i class="loss-swatch loss-swatch--experience"></i>实际体验反馈</span>
+              <span><i class="loss-swatch loss-swatch--service"></i>新增客户反馈</span>
+            </div>
+            <div class="loss-voice-tabs" id="loss-voice-tabs" role="tablist"></div>
+            <div class="loss-voice-columns" id="loss-voice-columns"></div>
+          </article>
+        </section>
+
+        <footer class="page-footer">
+          <span>MINI F6X 车主&amp;潜客调研报告</span>
+          <span>潜客流失原因分析 · 第六部分</span>
+        </footer>
+      </section>
+
+      <section class="dashboard-page" id="page-competitor" data-page="competitor" hidden>
+        <div class="placeholder-page">
+          <p class="page-header__eyebrow">第五部分</p>
+          <h1>05 竞品分析</h1>
+          <p class="placeholder-page__status">即将上线</p>
+          <p>该模块将展示主要竞品、品牌交叉考虑、竞争优势与用户流向。</p>
+        </div>
+      </section>
+
+      <section class="dashboard-page" id="page-channels" data-page="channels" hidden>
+        <div class="placeholder-page">
+          <p class="page-header__eyebrow">第六部分</p>
+          <h1>06 用户触达渠道</h1>
+          <p class="placeholder-page__status">即将上线</p>
+          <p>该模块将展示媒体触点、信息来源、内容偏好与渠道影响力。</p>
+      </section>
+
+      <section class="dashboard-page" id="page-customer-value" data-page="customer-value" hidden>
+        <div class="placeholder-page">
+          <p class="page-header__eyebrow">第七部分</p>
+          <h1>07 客户价值分析</h1>
+          <p class="placeholder-page__status">即将上线</p>
+          <p>该模块将展示客户价值分层、忠诚度、推荐意愿与长期经营机会。</p>
+        </div>
+      </section>
+
+      <section class="dashboard-page" id="page-data-management" data-page="data-management" hidden>
+        <div class="placeholder-page placeholder-page--data">
+          <p class="page-header__eyebrow">系统管理</p>
+          <h1>数据管理</h1>
+          <div class="card data-management-card">
+            <dl class="data-management-list">
+              <div>
+                <dt>当前数据版本</dt>
+                <dd>MINI F65/F66 用户洞察数据.xlsx</dd>
+              </div>
+              <div>
+                <dt>更新时间</dt>
+                <dd>2026-07-27</dd>
+              </div>
+            </dl>
+            <button class="data-upload-button" type="button" disabled title="上传功能暂未开放">
+              上传新数据
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="xlsx.full.min.js"></script>
+    <script src="echarts.min.js"></script>
+    <script src="quarterly-config.js?v=20260810-2"></script>
+    <script src="quarterly-workbook-data.js?v=20260810-3"></script>
+    <script src="prospect-mock-data.js?v=20260728-1"></script>
+    <script src="leads-intent-data.js?v=20260728-1"></script>
+    <script src="section-config.js?v=20260728-5"></script>
+    <script src="ui-components.js?v=20260728-2"></script>
+    <script src="charts.js?v=20260806-1"></script>
+    <script src="purchase-charts.js?v=20260809-7"></script>
+    <script src="motivation-charts.js?v=20260728-2"></script>
+    <script src="purchase-journey.js?v=20260728-4"></script>
+    <script src="leads-intent.js?v=20260728-1"></script>
+    <script src="leads-loss.js?v=20260728-2"></script>
+    <script src="overview.js?v=20260728-4"></script>
+    <script src="app.js?v=20260730-1"></script>
+    <script src="quarterly-data-adapter.js?v=20260810-3"></script>
+    <script src="quarterly-dashboard.js?v=20260806-1"></script>
+  </body>
+</html>
