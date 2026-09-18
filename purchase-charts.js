@@ -144,7 +144,13 @@
       : purchaseType === "换购"
         ? REPLACEMENT_PURCHASE_AVERAGE_AGE_SHEET
         : FIRST_PURCHASE_AVERAGE_AGE_SHEET;
-    const rows = await loadRows(sheetName);
+    let rows;
+    try {
+      rows = await loadRows(sheetName);
+    } catch (error) {
+      console.info(`未找到可选明细表 ${sheetName}，将使用购车类型画像中的年龄分布回退计算。`);
+      return null;
+    }
     const row = rows.find(
       (item) =>
         (item.model ?? item.Model) === model &&
@@ -165,7 +171,13 @@
       : purchaseType === "换购"
         ? REPLACEMENT_PURCHASE_GENDER_PROFILE_SHEET
         : FIRST_PURCHASE_GENDER_PROFILE_SHEET;
-    const rows = await loadRows(sheetName);
+    let rows;
+    try {
+      rows = await loadRows(sheetName);
+    } catch (error) {
+      console.info(`未找到可选明细表 ${sheetName}，将使用购车类型画像中的性别分布。`);
+      return [];
+    }
     return rows
       .filter((row) =>
         (row.model ?? row.Model) === model &&
@@ -193,7 +205,13 @@
     const sheetName = purchaseType === "增购"
       ? ADDITIONAL_PURCHASE_VEHICLE_SHEET
       : REPLACEMENT_PURCHASE_VEHICLE_SHEET;
-    const rows = await loadRows(sheetName);
+    let rows;
+    try {
+      rows = await loadRows(sheetName);
+    } catch (error) {
+      console.info(`未找到可选明细表 ${sheetName}，车辆品牌及车系表暂不展示。`);
+      return null;
+    }
     const selected = rows
       .filter((row) =>
         (row.model ?? row.Model) === model &&
